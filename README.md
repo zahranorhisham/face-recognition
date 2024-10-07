@@ -16,7 +16,7 @@ face prediction should be easy to update online to add new targets.
 Just type:
 
 ```bash
-docker run -it --rm -p 5000:5000 btwardow/tf-face-recognition:1.0.0
+docker run -it --rm -p 5000:5000 face-recognition:latest
 ```
 
 Then got to [https://localhost:5000/](https://localhost:5000/) or type
@@ -41,7 +41,7 @@ make
 #### Run project
 
 ```bash
-docker run --rm -it -p 5000:5000 -v /$(pwd):/workspace btwardow/tf-face-recognition:dev
+docker run --rm -it -p 5000:5000 -v /$(pwd):/workspace face-recognition:latest
 ```
 
 This volume mapping is very convenient for the development and testing purposes.
@@ -160,7 +160,7 @@ If you are interested about the classification, please check out this [notebook]
 You can run jupyter notebook from the docker, just type:
 
 ```bash
-docker run --rm -it -p 8888:8888 btwardow/tf-face-recognition:1.0.0 /run_jupyter.sh --allow-root
+docker run --rm -it -p 8888:8888 face-recognition:latest /run_jupyter.sh --allow-root
 ```
 
 
